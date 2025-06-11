@@ -2,7 +2,7 @@ import requests
 import argparse
 import os
 
-parser = argparse.ArgumentParser(description="Simple web fuzzer for login pages")
+parser = argparse.ArgumentParser("<-----------------------------| Web Fuzzing SQL |----------------------------->")
 parser.add_argument("--url", required=True, help="Base URL (e.g., https://example.com/)")
 parser.add_argument("--file", required=True, help="Path to the login wordlist")
 
