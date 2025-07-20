@@ -19,7 +19,8 @@ host = get_host()
 logging.basicConfig(
     filename="proxy.log",
     level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[logging.FileHandler("proxy.log"), logging.StreamHandler()]
 )
 
 def start_proxy(host, port):
